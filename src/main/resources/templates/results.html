@@ -5,15 +5,17 @@
 <title>Results Page</title>
 </head>
 <body>
-	<p th:text="'You selected ' + ${game.player1} + '.'"/>
-	<p th:text="'Computer selected ' + ${game.computerPlayer} + '.'"/>
-	<p th:text="'The winner was ' + ${game.winner} + '.'"/>
-	
+	<p th:text="'You selected ' + ${game.player1} + '.'" />
+	<p th:text="'Computer selected ' + ${game.computerPlayer} + '.'" />
+	<p th:text="'Results: ' + ${game.winner}" />
+
 	<p>Thanks for playing. Play again?</p>
 
-	<a href= "/playagame?choice=rock">rock</a>
-	<a href= "/playagame?choice=paper">paper</a>
-	<a href= "/playagame?choice=scissors">scissors</a>
+	<a href="/playagame?choice=ROCK">ROCK</a>
+	<a href="/playagame?choice=PAPER">PAPER</a>
+	<a href="/playagame?choice=SCISSORS">SCISSORS</a>
+	<a href="/playagame?choice=LIZARD">LIZARD</a>
+	<a href="/playagame?choice=SPOCK">SPOCK</a>
 
 </body>
 </html>
